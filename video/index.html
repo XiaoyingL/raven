@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>《Raven：掠夺者》影音专区_视频截图介绍_《Raven：掠夺者》官网</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function(){
+            $("#box>.smaphoto>li").mouseenter(function () {
+                $(this).css("opacity", 1).siblings("li").css("opacity", 0.4);
+            });
+            $("#box>.smaphoto>li").mouseleave(function () {
+                $(this).css("opacity", 1).siblings("li").css("opacity", 1);
+            });
+
+
+
+            $("#logo-ad").mouseenter(function(){
+                $(this).css("display","none");
+                $(".bgtop-ad").css("display","block");
+            });
+            $(".bgtop-ad").mouseleave(function(){
+                $(this).css("display","none");
+                $("#logo-ad").css("display","block");
+            });
+
+
+            $(".gongzhonghao .weixin").mouseenter(function(){
+                $("#big-weixin").slideDown();
+            });
+            $(".gongzhonghao .weixin").mouseleave(function(){
+                $("#big-weixin").slideUp();
+            });
+            $(".gongzhonghao .yixin").mouseenter(function(){
+                $("#big-yixin").slideDown();
+            });
+            $(".gongzhonghao .yixin").mouseleave(function(){
+                $("#big-yixin").slideUp();
+            })
+            $(".gongzhonghao .raven").mouseenter(function(){
+                $("#big-raven").css("display","block");
+            });
+            $("#big-raven").mouseleave(function(){
+                $(this).css("display","none");
+            });
+
+            $("#weixin-bigger").mouseenter(function(){
+                $("#weixin-bigger1").show(1000);
+            });
+            $("#weixin-bigger").mouseleave(function(){
+                $("#weixin-bigger1").hide(1000);
+            });
+
+
+
+            $("#zhankai10").click(function(){
+                $(this).css("display","none")
+                $(".shaoyishao .xiazai").animate({"width":"181px"},1);
+//                $(".shouqi").animate({"width":"222px"},500);
+                $(".shouqi").css("display","block");
+            });
+
+
+
+           $(".shouqi").click(function(){
+               $(".shaoyishao .xiazai").animate({"width":"0px"},500);
+               $(this).animate({"width":"41px"},500);
+               $(this).css("display","none");
+               $("#zhankai10").css("display","block");
+//               $(this).html("展<br/>开");
+           });
+
+//            if($(".shouqi").html=="展<br/>开"){
+//                $(this).siblings().animate({"width":"181px"},500);
+//                $(this).css("right","222px");
+//                $(this).siblings().width(222);
+//                $(this).html("收<br/>起");
+//            }else{
+//                $(this).siblings().animate({"width":"0px"},500);
+//                $(this).css("right","0px");
+//                $(this).html("展<br/>开");
+//            }
+//               漫画部分
+               $("#box>.smaphoto>li").mouseenter(function () {
+                   $(this).css("opacity", 1).siblings("li").css("opacity", 0.4);
+               });
+               $("#box>.smaphoto>li").mouseleave(function () {
+                   $(this).css("opacity", 1).siblings("li").css("opacity", 1);
+               });
+        });
+    </script>
+</head>
+<body>
+<!--头部导航栏开始-->
+<div class="topheader clearfix">
+    <div class="logo">
+        <embed src="image/bgm.mp3" hidden="true" type=""/>
+        <img src="image/logo.png"  alt=""/>
+    </div>
+    <div class="top-ad">
+        <img src="image/top-smallad.png" id="logo-ad" height="55px" alt=""/>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">网易游戏全目录</a></li>
+            <li><a href="#">网易游戏全目录</a></li>
+            <li><a href="#">充值安卓</a></li>
+            <li><a href="#">注册账号</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部导航栏结束-->
+<!--游戏视频开始-->
+<div class="bgimg clearfix">
+    <div class="bgtop-ad"></div>
+     <div class="ldz-logo">
+         <img src="image/logo_ldz.png" alt=""/>
+     </div>
+    <div class="gongzhonghao">
+        <span>公众号 : </span>
+        <div class="weixin"></div>
+        <div class="yixin"></div>
+        <div class="raven"></div>
+        <div id="big-weixin"></div>
+        <div id="big-yixin"></div>
+        <div id="big-raven"></div>
+    </div>
+
+    <div class="sp-role">
+        <img src="image/sp.01.png" alt=""/>
+    </div>
+    <video width="740" height="500"  autoplay  class="movie">
+        <source src="image/movie.mp4" type="video/mp4">
+        <source src="image/movie.ogg" type="video/ogg">
+        <source src="image/movie.webm" type="video/webm">
+        <object data="image/movie.mp4" width="740" height="500">
+            <embed src="image/movie.swf" width="740" height="500">
+        </object>
+    </video>
+    <div class="gongce-cg"></div>
+    <div class="enjoy">
+        <a href="#">分享到:</a>
+        <div class="tubiao1"></div>
+        <div class="tubiao2"></div>
+        <div class="tubiao3"></div>
+    </div>
+    <div class="fanhui"><a href="../index/index.html" target="_self">返回官网&gt;&gt;</a></div>
+    <!--固定定位-->
+    <div class="shebei"></div>
+    <div>
+        <div id="weixin-bigger"></div>
+        <div id="weixin-bigger1"></div>
+    </div>
+    <div class="shaoyishao">
+        <div class="shouqi">收<br/>起</div>
+        <div id="zhankai10">展<br/>开</div>
+        <div class="xiazai"><img src="image/xiazai.png" alt=""/></div>
+    </div>
+</div>
+<!--游戏视频结束-->
+<!--游戏截图开始-->
+<div class="gamepic">
+    <div class="bigjietu">
+        <div class="jietu1"><img src="image/bg01.jpg" alt=""/></div>
+        <div class="jietu1"><img src="image/bg02.jpg" alt=""/></div>
+        <div class="jietu1"><img src="image/bg03.jpg" alt=""/></div>
+        <div class="jietu1"><img src="image/bg04.jpg" alt=""/></div>
+        <div class="jietu1"><img src="image/bg05.jpg" alt=""/></div>
+        <div class="jietu1"><img src="image/bg06.jpg" alt=""/></div>
+    </div>
+    <div class="tb-left"><img src="image/tb-left.png" alt=""/></div>
+    <div class="tb-right"><img src="image/tb-right.png" alt=""/></div>
+</div>
+<!--游戏截图结束-->
+<!--游戏漫画开始-->
+<div class="manhua">
+    <div class="man3">
+        <img src="image/man3png.png" alt=""/>
+    </div>
+    <!--漫画部分-->
+    <div id="box">
+        <ul class="smaphoto">
+            <li id="mh101"><a href="javascript:;"><img src="image/mh1-tiele.jpg" alt=""/></a></li>
+            <li class="mh201"><a href="javascript:;"><img src="image/mh2-tiele.jpg" alt=""/></a></li>
+            <li class="mh301"><a href="javascript:;"><img src="image/mh3-tiele.jpg" alt=""/></a></li>
+            <li class="mh401"><a href="javascript:;"><img src="image/mh4-tiele.jpg" alt=""/></a></li>
+            <li class="mh501"><a href="javascript:;"><img src="image/mh5-tiele.jpg" alt=""/></a></li>
+            <li class="mh601"><a href="javascript:;"><img src="image/mh6-tiele.jpg" alt=""/></a></li>
+        </ul>
+        <div id="blk">
+            <ul id="photos">
+                <li id="tp1"><img src="image/mh1.01.jpg" alt=""/></li>
+                <li><img src="image/mh1.02.jpg" alt=""/></li>
+                <li><img src="image/mh1.03.jpg" alt=""/></li>
+                <li><img src="image/mh1.04.jpg" alt=""/></li>
+                <li><img src="image/mh1.05.jpg" alt=""/></li>
+                <li><img src="image/mh1.06.jpg" alt=""/></li>
+                <li><img src="image/mh1.07.jpg" alt=""/></li>
+                <li><img src="image/mh1.08.jpg" alt=""/></li>
+                <li><img src="image/mh1.09.jpg" alt=""/></li>
+                <li><img src="image/mh1.10.jpg" alt=""/></li>
+                <li><img src="image/mh1.11.jpg" alt=""/></li>
+                <li><img src="image/mh1.12.jpg" alt=""/></li>
+                <li><img src="image/mh1.13.jpg" alt=""/></li>
+                <li><img src="image/mh1.14.jpg" alt=""/></li>
+                <li><img src="image/mh1.15.jpg" alt=""/></li>
+                <li><img src="image/mh1.16.jpg" alt=""/></li>
+                <li><img src="image/mh1.17.jpg" alt=""/></li>
+            </ul>
+            <span id="leftz"><a href="javascript:;"><img src="image/tb-left.png" alt=""/></a></span>
+            <span id="righty"><a href="javascript:;"><img src="image/tb-right.png" alt=""/></a></span>
+            <span id=close><a href="javascript:;"><img src="image/close-banner.png" alt=""/></a></span>
+
+        </div>
+    </div>
+</div>
+<!--游戏漫画结束-->
+<!--底部开始-->
+<div class="footer">
+    <div class="footer1">
+        <a href="#"><img src="image/dbwyyx.png" alt=""/></a>
+        <a href="#"><img src="image/dbwyyx01.png" class="pic1" alt=""/></a>
+        <a href="#"><img src="image/dbwyyx02.png" class="pic2" alt=""/></a>
+        <a href="#"><img src="image/dbwyyx03.png" alt=""/></a>
+    </div>
+    <div class="footer2">
+        <p>公司简介-客户服务-相关法律-网易游戏-联系我们-商务合作-加入我们-用户协议</p>
+        <p>网易公司版权所有 1997-2016</p>
+    </div>
+    <div class="click"><a href="">点击查看家长监护工程&nbsp;<span>&lt;</span></a></div>
+</div>
+<!--底部结束-->
+</body>
+</html>

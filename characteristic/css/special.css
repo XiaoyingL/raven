@@ -1,0 +1,54 @@
+
+/*游戏特色开始*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.empSpecial{
+    height: 154px;
+    background-color: #3C4248;
+}
+.empSpecial h3{
+    width: 1250px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 24px;
+}
+.empSpecial h3 span{
+    color: white;
+}
+#gameSpecial{
+    height: 459px;
+    background-image: url("../../images/bg01.jpg");
+}
+#gameSpecial ul{
+    width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+}
+#gameSpecial li{
+    width: 310px;
+    float: left;
+    overflow: hidden;
+}
+#gameSpecial .special_A{
+    width: 506px;
+    height: 349px;
+}
+#gameSpecial .special_B{
+    width: 790px;
+    height: 733px;
+    position: absolute;
+    display: none;
+}
+#gameSpecial .txt{
+    position: absolute;
+    width: 50px;
+    margin: 0 50px;
+}
+#gameSpecial h2{
+    font-size: 40px;
+    color: white;
+}
+/*游戏特色结束*/

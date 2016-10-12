@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Raven : 掠夺者</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/special.css"/>
+    <script src = "js/jquery-1.12.4.js"></script>
+    <script src = "js/index.js"></script>
+    <script src = "js/gamespecial.js"></script>
+</head>
+<body>
+<!--顶部-->
+<div id="topBar" class="clearfix">
+    <div class="w">
+        <div class="topBarLogo fl">
+            <a href="#">网易游戏</a>
+        </div>
+        <div class="topBanner fl"></div>
+        <ul class = "fr">
+            <li><a href="#">注册账号</a></li>
+            <li><a href="#">安卓充值</a></li>
+            <li class="dir-li"><a href="#">网易游戏全目录</a><em></em></li>
+            <li><a href="#">网易考拉海购</a></li>
+        </ul>
+    </div>
+</div>
+<div id="mainTop" class="clearfix">
+    <embed src="video/image/bgm.mp3" hidden="true" type=""/>
+    <div id="bigBanner"></div>
+        <div>
+            <div class="topper w clearfix">
+                <div class="main-top-common clearfix">
+                    <div class="main-top-logo fl"></div>
+                    <ul id = "navTop" class="fl">
+                        <li><a href="#" class="sub-m">首 页</a></li>
+                        <li><a href="#" class="sub-m">资讯中心</a></li>
+                        <li id="navSpecial">
+                            <a href="characteristic/main.html" target="_blank" class="sub-m">游戏特色</a>
+                            <a href="#" class = "sub-n">金属视觉盛宴</a>
+                            <a href="#" class = "sub-n">动作感官史诗</a>
+                            <a href="#" class = "sub-n">史诗剧情</a>
+                            <a href="#" class = "sub-n">大包体大世界</a>
+                        </li>
+                        <li><a href="#" class="sub-m">热点活动</a></li>
+                        <li id = "navIntro">
+                            <a href="species/pangu.html" target="_blank" class="sub-m">种族介绍</a>
+                            <a href="species/pangu.html" target="_blank" class = "sub-n">盘古</a>
+                            <a href="species/renlei.html"target="_blank"  class = "sub-n">人类</a>
+                            <a href="species/jingling.html" target="_blank" class = "sub-n">精灵</a>
+                        </li>
+                        <li id = "navVideo">
+                            <a href="video/index.html" target="_blank"  class="sub-m">影音专区</a>
+                            <a href="#" class = "sub-n">视频</a>
+                            <a href="#" class = "sub-n">截图</a>
+                            <a href="#" class = "sub-n">漫画</a>
+                            <a href="#" class = "sub-n">视频攻略</a>
+                        </li>
+                        <li id = "navData">
+                            <a href="data/index.html" target="_blank" class="sub-m">游戏资料</a>
+                            <a href="#" class = "sub-n">饰品</a>
+                            <a href="#" class = "sub-n">披风</a>
+                            <a href="#" class = "sub-n">套装</a>
+                            <a href="#" class = "sub-n">武器</a>
+                        </li>
+                        <li><a href="#" class="sub-m">官方论坛</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="gzh w">
+                公众号：
+                <a href="javascript:;" class = "wx"></a>
+                <a href="javascript:;" class = "yx"></a>
+                <a href="javascript:;" class = "wb"></a>
+            </p>
+        </div>
+    <div class="gzhewm w">
+        <img src="images/wx_ewmpng.png" width="100" height="100" id="ewmwx" alt=""/>
+        <img src="images/yx_ewm.png" width="100" height="100" id="ewmyx" alt=""/>
+    </div>
+    <div class="main-header w" id = "mainHeader">
+        <a href="javascript:;" id = "playIndex">
+            <img src="images/index_zpng_r2_c2.png" alt=""/>
+        </a>
+        <h2>全新资料片：黑色宝石的秘密</h2>
+        <div id="btnDownload">
+            <div class="btns">
+                <span id="btn1">
+                    <img src="images/download_ewm.png" alt=""/>
+                </span>
+                <span id="btn2">
+                    <a href="javascript:;" class="iphone"></a>
+                    <a href="javascript:;" class="android"></a>
+                </span>
+                <span id="btn3">
+                    <a href="javascript:;"><i></i></a>
+                </span>
+            </div>
+        </div>
+        <div id="shareHeader">
+            <span>分享到：</span>
+            <ul class="shareul">
+                <li><a href="#" class="iconfont fl" title="分享到微信二维码">&#xe65d;</a></li>
+                <li><a href="#" class="iconfont fl" title="分享到易信">&#xe609;</a></li>
+                <li><a href="#" class="iconfont fl sharebtn3" title="分享到QQ空间">&#xe657;</a></li>
+                <li><a href="#" class="iconfont fl sharebtn4" title="分享到腾讯微博">&#xe67c;</a></li>
+                <li><a href="#" class="iconfont fl" title="分享到微信二维码">&#xe65c;</a></li>
+                <li><a href="#" class="iconfont fl sharebtn6">&#xe601;</a></li>
+            </ul>
+        </div>
+        <div class="device">
+            <a href="javacript:;">设备要求</a>
+            <div class="gzh-ewm">
+                <img src="images/wx_ewmpng.png" alt=""/>
+                扫码关注公众号<br/>
+                抢先下载掠夺者
+            </div>
+        </div>
+        <!--新闻轮播图部分-->
+        <div class="main-news">
+            <!--左边轮播图-->
+            <div class="banner-anim" id="banner-anim">
+                <div class="screen">
+                    <ul>
+                        <li><img src="images/pic1.jpg" alt=""/></li>
+                        <li><img src="images/pic2.jpg" alt=""/></li>
+                        <li><img src="images/pic3.jpg" alt=""/></li>
+                        <li><img src="images/pic4.jpg" alt=""/></li>
+                    </ul>
+                    <ol></ol>
+                </div>
+            </div>
+
+            <div class="news-tab" id="newsTab">
+                <div class="hd">
+                    <a class="hd-a" href="javascript:;">最新
+                        <i class="i-line"></i>
+                    </a>
+                    <a class="hd-a" href="javascript:;">新闻
+                        <i class="i-line"></i>
+                    </a>
+                    <a class="hd-a" href="javascript:;">公告
+                        <i class="i-line"></i>
+                    </a>
+                    <a class="hd-a" href="javascript:;">活动
+                        <i class="i-line"></i>
+                    </a>
+                    <a class="hd-a" href="javascript:;">媒体
+                        <i class="i-line"></i>
+                    </a>
+                    <a href="#" class="hd-more">+</a>
+                </div>
+                <div class="tempWrap" id="temWrap" style="overflow: hidden;position: relative;width: 590px;">
+                    <div class="bd" style="width: 3540px;left: 0;position: relative;overflow: hidden;padding: 0;margin: 0;">
+                        <ul class="news-list current"  style="float: left; width: 510px">
+                            <li>
+                                <a href="#">[新闻] 唐嫣直播，柳岩助阵，《大唐游仙记》今日App Store首发！</a>
+                                <span class="date">2016-06-17</span>
+                            </li>
+                            <li>
+                                <a href="#">[新闻] 玩游戏赢全新游戏旗舰 《掠夺者》一加手机3限量版今日全球首发</a>
+                                <span class="date">2016-06-16</span>
+                            </li>
+                            <li><a href="#">
+                                [活动] 最强者的邀请函，《掠夺者》名人殿堂计划启动！</a>
+                                <span class="date">2016-06-16</span>
+                            </li>
+                            <li><a href="#">
+                                [公告] 《掠夺者》6月16日更新维护时间延长公告</a>
+                                <span class="date">2016-06-16</span>
+                            </li>
+                            <li><a href="#">
+                                [公告] 《Raven：掠夺者》6月16日更新维护公告</a>
+                                <span class="date">2016-06-15</span>
+                            </li>
+                        </ul>
+                        <ul class="news-list" style="float: left; width: 510px">
+                            <li><a href="#">
+                                [新闻] 唐嫣直播，柳岩助阵，《大唐游仙记》今日App Store首发！</a>
+                                <span class="date">2016-06-17</span>
+                            </li>
+                            <li><a href="#">
+                                [新闻] 玩游戏赢全新游戏旗舰 《掠夺者》一加手机3限量版今日全球首发</a>
+                                <span class="date">2016-06-16</span>
+                            </li>
+                            <li><a href="#">
+                                [新闻] 《掠夺者》6月全新资料片降临 破灭系列武器强势登场</a>
+                                <span class="date">2016-06-03</span>
+                            </li>
+                            <li><a href="#">
+                                [新闻] 大场面动作团战大不同 《掠夺者》带来多样团队BOSS战玩法</a>
+                            </li>
+                            <li><a href="#">
+                                [新闻] 《掠夺者》个人专属名片上线 游戏内外福利领不停</a>
+                                <span class="date">2016-05-27</span>
+                            </li>
+                        </ul>
+                        <ul class="news-list" style="float: left; width: 510px">
+                            <li><a href="#">
+                                [公告] 《掠夺者》6月16日更新维护时间延长公告</a>
+                                <span class="date">2016-06-16</span>
+                            </li>
+                            <li><a href="#">
+                                [公告] 《Raven：掠夺者》6月16日更新维护公告</a>
+                                <span class="date">2016-06-15</span>
+                            </li>
+                            <li><a href="#">
+                                [公告] 《Raven：掠夺者》6月2日更新维护公告——全新资料片明日降临</a>
+                                <span class="date">2016-06-01</span>
+                            </li>
+                            <li><a href="#">
+                                [公告] 《Raven：掠夺者》5月26日更新维护公告</a>
+                                <span class="date">2016-05-25</span>
+                            </li>
+                            <li><a href="#">
+                                [公告] 关于单月充值福利问题修复公告</a>
+                                <span class="date">2016-05-19</span>
+                            </li>
+                        </ul>
+                        <ul class="news-list" style="float: left; width: 510px">
+                            <li><a href="#">
+                                [活动] 最强者的邀请函，《掠夺者》名人殿堂计划启动！</a>
+                                <span class="date">2016-06-16</span>
+                            </li>
+                            <li><a href="#">
+                                [活动] 真女神，就让勇士和公会都为你喝彩</a>
+                                <span class="date">2016-05-23</span>
+                            </li>
+                            <li><a href="#">
+                                [活动] 《掠夺者》微信有奖签到活动说明</a>
+                                <span class="date">2016-05-20</span>
+                            </li>
+                            <li><a href="#">
+                                [活动] 《掠夺者》广发日专享半价活动公告</a>
+                                <span class="date">2016-05-13</span>
+                            </li>
+                            <li><a href="#">
+                                [活动] 专为公会准备的福利来了！会长快来开公交！</a>
+                                <span class="date">2016-05-10</span>
+                            </li>
+                        </ul>
+                        <ul class="news-list" style="float: left; width: 510px">
+                            <li><a href="#">
+                                [媒体] 手残党？0元党？你想要的攻略这里都有！--17173</a>
+                                <span class="date">2016-05-10</span>
+                            </li>
+                            <li><a href="#">
+                                [媒体] 【当乐网】金属质感十足的ARPG游戏《Raven：掠夺者》评测</a>
+                                <span class="date">2016-04-11</span>
+                            </li>
+                            <li><a href="#">
+                                [媒体] 【18183】华丽的ARPG巨制 《Raven：掠夺者》18183独家评测</a>
+                                <span class="date">2016-04-11</span>
+                            </li>
+                            <li><a href="#">
+                                [媒体] 【超好玩】《Raven：掠夺者》评测：打击畅爽到爆的高品质ARPG</a>
+                                <span class="date">2016-04-11</span>
+                            </li>
+                            <li><a href="#">
+                                [媒体] 【口袋巴士】《掠夺者》评测：成功之道在于每个细节都做对了</a>
+                                <span class="date">2016-04-11</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--顶部结束-->
+<!--中间轮播图：荆帅-->
+
+
+
+<!--中间手风琴；刘鹏程-->
+<!--游戏特色开始-->
+<div class="empSpecial">
+    <h3>□&nbsp&nbsp<span>游戏特色</span>&nbsp&nbsp□</h3>
+</div>
+<div id="gameSpecial">
+    <ul>
+        <li>
+            <div class="txt">
+                <h2>钢铁碰撞血肉</h2>
+            </div>
+            <div class="special_A"></div>
+            <div class="special_B"></div>
+        </li>
+        <li>
+            <div class="txt">
+                <h2>重甲动作美学</h2>
+            </div>
+            <div class="special_A"></div>
+            <div class="special_B"></div>
+        </li>
+        <li>
+            <div class="txt">
+                <h2>指尖蓝光画质</h2>
+            </div>
+            <div class="special_A"></div>
+            <div class="special_B"></div>
+        </li>
+        <li>
+            <div class="txt">
+                <h2>武器决定技能</h2>
+            </div>
+            <div class="special_A"></div>
+            <div class="special_B"></div>
+        </li>
+    </ul>
+</div>
+<!--游戏特色结束-->
+
+<!--底部影音：童思颖-->
+<!--影音专区-->
+<div class="video-zone">
+    <div class="vid-title">
+        <span class="fl"></span>
+        <h1 class="fl">影音专区</h1>
+        <span class="fl"></span>
+    </div>
+    <div class="video-pic">
+        <div class="vid-pic1 fl">
+            <div></div>
+            <img src="images/videozone01.png" alt="图片"/>
+            <div class="vid-press1"></div>
+            <p class="vid-p1"><a href="../video/index.html" target="_blank">游戏视频</a></p>
+        </div>
+        <div class="vid-pic2 fl">
+            <div></div>
+            <img src="images/videozone02.png" alt="图片"/>
+            <div class="vid-press2"><a href=""></a></div>
+            <p class="vid-p2"><a href="../video/index.html" target="_blank">游戏截图</a></p>
+        </div>
+        <div class="vid-pic3 fl">
+            <div></div>
+            <img src="images/videozone03.png" alt="图片"/>
+            <div class="vid-press2"><a href=""></a></div>
+            <p class="vid-p3"><a href="../video/index.html" target="_blank">游戏漫画</a></p>
+        </div>
+    </div>
+    <div class="vid-words">
+        <p>客服电话 :020-89166182-3</p>
+        <p>网易游戏对外联系专线 :0571-26206163（呼出专用，不作接听）</p>
+    </div>
+</div>
+<!--影音专区结束-->
+<!--底部开始-->
+<div class="footer">
+    <div class="bx">
+        <div class="footer-pic clearfix">
+            <ul>
+                <li><a href="#"><img src="images/netease.3.png" alt="网易logo"/></a></li>
+                <li><a href="#"><img src="images/nie.3.png" alt="网易logo"/></a></li>
+                <li><a href="#"><img src="images/wen.png" alt="图片"/></a></li>
+                <li><a href="#"><img src="images/wen2.png" alt="图片"/></a></li>
+                <li><a href="#"><img src="images/zuihou.png" alt="图片"/></a></li>
+            </ul>
+            <div class="footer-right">
+                <a href="#"> 点击查看家长监护工程&nbsp;
+                    <i>
+                        <s>
+                            ♢
+                        </s>
+                    </i>
+                </a>
+            </div>
+        </div>
+        <ul class="footer-ser clearfix">
+            <li><a href="#">公司简介</a></li>
+            <li>－</li>
+            <li><a href="#">客户服务</a></li>
+            <li>－</li>
+            <li><a href="#">相关法律</a></li>
+            <li>－</li>
+            <li><a href="#">网易游戏</a></li>
+            <li>－</li>
+            <li><a href="#">联系我们</a></li>
+            <li>－</li>
+            <li><a href="#">商务合作</a></li>
+            <li>－</li>
+            <li><a href="#">加入我们</a></li>
+            <li>－</li>
+            <li><a href="#">用户协议</a></li>
+        </ul>
+        <div class="footer-copy">网易公司版权所有 &copy;1997-2016</div>
+
+        <div class="footer-note">
+            <p> 本游戏适合16岁以上的玩家进入。</p>
+            <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+        </div>
+        <div class="footer-bottom">
+            <p class="bota fl">《网络游戏管理暂行办法》</p>
+            <p class="botb fl">文网游备字〔2016〕Ｍ-SLG 1015 号《网络文化经营许可证》浙网文[2016]0155-055号</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

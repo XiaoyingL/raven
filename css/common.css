@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/*css 初始化*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+}
+
+/*防止拖动，影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+.w {
+    /*版心 提取*/
+    width: 1250px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*顶部*/
+#topBar {
+    background-color: #FBFBFB;
+}
+
+#topBar .topBarLogo {
+    width: 131px;
+    height: 55px;
+    float: left;
+    margin-top: 5px;
+}
+
+#topBar .topBarLogo a {
+    background: url("../images/logo_b5525b7.png") no-repeat;
+    display: inline-block;
+    width: 131px;
+    height: 43px;
+    text-indent: -20000px;
+
+}
+#topBar .topBanner{
+    height: 55px;
+    width: 420px;
+    background: url("../images/pic9d0b.jpg") no-repeat;
+}
+
+#topBar .fr li {
+    float: left;
+    line-height: 55px;
+    margin-left: 28px;
+}
+
+#topBar .dir-li {
+    position: relative;
+    margin-right: 25px;
+}
+
+#topBar .dir-li a {
+
+    color: #BC2E2E;
+}
+
+#topBar .fr em {
+    background: url("../images/sprite-w_7fc7459.png") -103px -100px no-repeat;
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    top: 25px;
+    right: -15px;
+}
+
+
+/*底部开始*/
+.footer{
+    height: 230px;
+    background-color: #000000;
+}
+.bx{
+    width: 949px;
+    margin: 0 auto;
+}
+.footer-pic{
+
+}
+.footer-pic ul{
+    padding-top: 23px;
+}
+.footer-pic li{
+    float: left;
+    padding: 0 10px;
+}
+
+.footer-pic .footer-right{
+    margin-top: 25px;
+    width: 142px;
+    height: 28px;
+    background-color: #610000;
+    float: right;
+    color: white;
+    position: relative;
+}
+.footer-pic .footer-right a{
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+    padding-left: 2px;
+}
+.footer-pic .footer-right s{
+    font: 17px/28px consolas;
+    position: absolute;
+    top: -2px;
+    right: 6px;
+}
+.footer-pic .footer-right i{
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    overflow: hidden;
+}
+.footer .footer-ser li{
+    color: #939393;
+    float: left;
+    line-height: 28px;
+    padding: 0 2px;
+}
+.footer .footer-ser a{
+    color: #E23A3F;
+}
+.footer .footer-copy{
+    color: #939393;
+    line-height: 20px;
+}
+.footer .footer-note{
+    color: #939393;
+    margin-top: 10px;
+}
+.footer .footer-note p {
+    line-height: 23px;
+}
+.footer .footer-bottom{
+    margin-top: 6px;
+}
+.footer .footer-bottom .bota{
+    color: #E23A3F;
+    margin-right: 10px;
+}
+.footer .footer-bottom .botb{
+    color: #939393;
+}
+/*底部结束*/

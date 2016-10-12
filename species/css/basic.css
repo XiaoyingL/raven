@@ -1,0 +1,635 @@
+@charset "UTF-8";
+/*css初始化*/
+html, body, div, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, a {
+    margin: 0;
+    padding: 0;
+    font-family: "microsoft yahei";
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "microsoft yahei";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*顶部开始*/
+.head {
+    height: 55px;
+    background-color: #fff;
+    line-height: 55px;
+}
+.head ul {
+    margin-right: 15px;
+}
+.head li {
+    float: left;
+    padding-left: 28px;
+    position: relative;
+
+}
+.head li i {
+    background: url(../images/sanjiao.png) no-repeat;
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top: 26px;
+    right: -13px;
+}
+.head a {
+    display: block;
+    color: #333333;
+}
+.head .contents {
+    color: #B4181B;
+}
+
+/*顶部结束*/
+/*主体开始*/
+.wrap {
+    background: url(../images/bg.jpg) no-repeat 50% 0;
+    height: 1363px;
+    position: relative;
+}
+
+.wrap .logo {
+    width: 249px;
+    height: 164px;
+    top: 50px;
+    left: 8px;
+    position: absolute;
+    z-index: 10;
+}
+
+.wrap .person {
+    height: 360px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 4;
+}
+
+.wrap .person img {
+    margin-bottom: 20px;
+}
+
+.main {
+    position: relative;
+}
+
+.main .main-slider {
+    height: 1282px;
+    width: 1500px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.main .slider {
+    width: 7500px;
+    position: absolute;
+    top: 0;
+    margin-left: -175px;
+
+}
+
+.main .slider img {
+    float: left;
+    width: 1500px;
+    display: inline-block;
+}
+
+.main .main-body {
+    position: relative;
+    width: 500px;
+    top: 50px;
+    left: 0;
+}
+
+.main .slogan {
+    position: absolute;
+}
+
+.main-body .intro {
+    width: 500px;
+    height: 232px;
+    position: absolute;
+    top: 330px;
+    left: 0;
+}
+
+.main-body .intro p {
+    color: #DCDCCE;
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+    line-height: 23px;
+}
+
+.main-body .intro p em {
+    background: url(../images/circle.png) no-repeat;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 7px;
+    left: -4px;
+}
+
+.main-body .video {
+    width: 497px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    top: 555px;
+    margin-top: 20px;
+}
+
+.fix-right {
+    position: relative;
+}
+
+.fix-right a {
+    background: url(../images/ewm3.png) -312px 0;
+    display: block;
+    height: 75px;
+    width: 73px;
+    position: fixed;
+    top: 460px;
+    right: 0;
+    z-index: 5;
+}
+
+.wrap .share {
+    height: 60px;
+    width: 210px;
+    /*background-color: pink;*/
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.share .shareto {
+    position: relative;
+}
+
+.shareto .shareul {
+    position: absolute;
+    top: 0;
+    width: 210px;
+    left: 60px;
+}
+
+.shareto .shareul a {
+    color: #a0907b;
+    font-size: 22px;
+    line-height: 22px;
+    margin-right: 1px;
+}
+
+.shareto .shareul .sharebtn3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+.shareto .shareul .sharebtn4 {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.shareto .shareul .sharebtn6 {
+    margin-left: 5px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */ url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.back a {
+    color: #CABBAB;
+    position: absolute;
+    top: 49px;
+    left: 65px;
+    font-size: 14px;
+
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+.wrap .left {
+    width: 54px;
+    height: 91px;
+    background: url(../images/left.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 500px;
+    left: -80px;
+    cursor: pointer;
+}
+
+.wrap .right {
+    width: 54px;
+    height: 91px;
+    background: url(../images/right.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 500px;
+    right: -80px;
+    cursor: pointer;
+}
+
+.wrap .ask a {
+    background: url(../images/jlt.png) -988px -770px;
+    display: block;
+    height: 75px;
+    width: 72px;
+    position: fixed;
+    left: 0;
+    top: 350px;
+    z-index: 12;
+}
+
+.fade {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 1965px;
+    background-color: rgba(0, 0, 0, .75);
+    top: 0;
+    z-index: 7;
+}
+
+.right-ewm {
+    width: 220px;
+    height: 221px;
+    position: fixed;
+    top: 250px;
+    right: 0;
+    z-index: 5;
+}
+
+.right-ewm .right-btn-warp {
+    width: 40px;
+    height: 66px;
+    background-color: #7F7160;
+    float: left;
+}
+
+.right-btn-warp .right-btn {
+    color: #BBC0A0;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right-ewm .ewm-bg {
+    height: 200px;
+    padding-top: 10px;
+    margin-left: 40px;
+    background-color: #7F7160;
+}
+
+.ewm-bg img {
+    width: 164px;
+    height: 164px;
+    padding-left: 10px;
+}
+
+.ewm-bg p {
+    padding-left: 20px;
+    padding-top: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.wrap .wuqi {
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 1000px;
+
+}
+
+.wuqiku a {
+    opacity: .7;
+}
+
+.wuqi .wuqiku {
+    margin-top: 20px;
+
+}
+
+.wuqiku .wuqi1 {
+    margin-right: 20px;
+}
+
+/*主体结束*/
+/*设备要求弹窗*/
+.device {
+    background: url(../images/jlt.png) no-repeat 0 0;
+    width: 479px;
+    height: 552px;
+    position: fixed;
+    top: 20px;
+    left: 440px;
+    display: none;
+    z-index: 12;
+}
+
+.device h2 {
+    border-bottom: 1px solid #a69b87;
+    margin: 0 40px 10px;
+    padding-bottom: 25px;
+    padding-top: 80px;
+    font-size: 18px;
+    color: #e7ded2;
+    font-weight: 700;
+}
+
+.device p {
+    line-height: 24px;
+    padding: 0 40px 5px;
+    font-size: 16px;
+    color: #e7ded2;
+}
+
+.device .book-close {
+    background: url(../images/jlt.png) no-repeat -1068px -252px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 5;
+}
+
+.device .book-close:hover {
+    transform: rotate(180deg) scale(2);
+    /*浏览器兼容性处理*/
+    -ms-transform: rotate(180deg) scale(1.2); /*ie9支持*/
+    -webkit-transform: rotate(180deg) scale(1.2); /*谷歌 safri支持*/
+    -o-transform: rotate(180deg) scale(1.2);
+    -moz-transform: rotate(180deg) scale(1.2);
+}
+
+/*武器弹窗*/
+.tc1 {
+    display: none;
+
+}
+
+.tc1 img {
+    position: fixed;
+    top: 20px;
+    left: 480px;
+    z-index: 12;
+
+}
+
+.tc1 .aClose {
+    position: fixed;
+    top: 20px;
+    left: 830px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(../images/jlt.png) no-repeat -1068px -252px;
+    z-index: 12;
+
+}
+
+.aClose:hover {
+    transform: rotate(180deg) scale(2);
+    /*浏览器兼容性处理*/
+    -ms-transform: rotate(180deg) scale(1.2); /*ie9支持*/
+    -webkit-transform: rotate(180deg) scale(1.2); /*谷歌 safri支持*/
+    -o-transform: rotate(180deg) scale(1.2);
+    -moz-transform: rotate(180deg) scale(1.2);
+}
+
+.tc2 {
+    display: none;
+}
+
+.tc2 img {
+    position: fixed;
+    top: 20px;
+    left: 480px;
+    z-index: 12;
+}
+
+.tc2 .aClose {
+    position: fixed;
+    top: 20px;
+    left: 830px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(../images/jlt.png) no-repeat -1068px -252px;
+    z-index: 12;
+
+}
+
+.tc3 {
+    display: none;
+}
+
+.tc3 img {
+    position: fixed;
+    top: 20px;
+    left: 480px;
+    z-index: 12;
+}
+
+.tc3 .aClose {
+    position: fixed;
+    top: 20px;
+    left: 830px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(../images/jlt.png) no-repeat -1068px -252px;
+    z-index: 12;
+
+}
+
+.tc4 {
+    display: none;
+}
+
+.tc4 img {
+    position: fixed;
+    top: 20px;
+    left: 480px;
+    z-index: 12;
+}
+
+.tc4 .aClose {
+    position: fixed;
+    top: 20px;
+    left: 830px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(../images/jlt.png) no-repeat -1068px -252px;
+    z-index: 12;
+
+}
+
+/*底部开始*/
+.footer {
+    height: 145px;
+    background-color: #292C31;
+    position: relative;
+}
+
+.footer1 {
+    position: absolute;
+    left: 245px;
+    top: 50px;
+
+}
+
+.footer1 .pic1 {
+    margin: 0px 10px;
+}
+
+.footer1 .pic2 {
+    margin-right: 15px;
+}
+
+.footer2 {
+    color: #9F9E9E;
+    position: absolute;
+    top: 55px;
+    left: 640px;
+}
+
+.footer .click a {
+    width: 150px;
+    height: 25px;
+    display: inline-block;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    background-color: #610000;
+    position: absolute;
+    top: 77px;
+    right: 320px;
+}
+
+.footer .click span {
+    margin-left: 5px;
+    font-size: 1px;
+    font-weight: 700;
+}
+
+/*底部结束*/

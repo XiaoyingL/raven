@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+li{
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+body{
+    overflow: auto;
+}
+
+/*顶部*/
+#topBar {
+    background-color: #FBFBFB;
+}
+
+#topBar .topBarLogo {
+    width: 131px;
+    height: 55px;
+    float: left;
+    margin-top: 5px;
+}
+
+#topBar .topBarLogo a {
+    background: url("../images/logo_b5525b7.png") no-repeat;
+    display: inline-block;
+    width: 131px;
+    height: 43px;
+    text-indent: -20000px;
+
+}
+#bigBanner{
+    height: 250px;
+    width: 960px;
+    background: url("../images/pic197c.jpg") no-repeat;
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -625px;
+    z-index: 5;
+}
+#topBar .topBanner{
+    height: 55px;
+    width: 420px;
+    background: url("../images/pic9d0b.jpg") no-repeat;
+}
+
+#topBar .fr li {
+    float: left;
+    line-height: 55px;
+    margin-left: 28px;
+}
+
+#topBar .dir-li {
+    position: relative;
+    margin-right: 25px;
+}
+
+#topBar .dir-li a {
+
+    color: #BC2E2E;
+}
+
+#topBar .fr em {
+    background: url("../images/sprite-w_7fc7459.png") -103px -100px no-repeat;
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    top: 25px;
+    right: -15px;
+}
+
+
+/*底部开始*/
+.footer{
+    height: 230px;
+    background-color: #000000;
+}
+.bx{
+    width: 949px;
+    margin: 0 auto;
+}
+.footer-pic{
+
+}
+.footer-pic ul{
+    padding-top: 23px;
+}
+.footer-pic li{
+    float: left;
+    padding: 0 10px;
+}
+
+.footer-pic .footer-right{
+    margin-top: 25px;
+    width: 142px;
+    height: 28px;
+    background-color: #610000;
+    float: right;
+    color: white;
+    position: relative;
+}
+.footer-pic .footer-right a{
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+    padding-left: 2px;
+}
+.footer-pic .footer-right s{
+    font: 17px/28px consolas;
+    position: absolute;
+    top: -2px;
+    right: 6px;
+}
+.footer-pic .footer-right i{
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    overflow: hidden;
+}
+.footer .footer-ser li{
+    color: #939393;
+    float: left;
+    line-height: 28px;
+    padding: 0 2px;
+}
+.footer .footer-ser a{
+    color: #E23A3F;
+}
+.footer .footer-copy{
+    color: #939393;
+    line-height: 20px;
+}
+.footer .footer-note{
+    color: #939393;
+    margin-top: 10px;
+}
+.footer .footer-note p {
+    line-height: 23px;
+}
+.footer .footer-bottom{
+    margin-top: 6px;
+}
+.footer .footer-bottom .bota{
+    color: #E23A3F;
+    margin-right: 10px;
+}
+.footer .footer-bottom .botb{
+    color: #939393;
+}
+/*底部结束*/
+
+
+
+
+
+/*第一个盒子start*/
+.firstbox {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+    background: url(../img/first/bigbgi.jpg) center top no-repeat;
+}
+.firstbox .tit {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 42%;
+    height: 200px;
+    z-index: 20;
+    opacity:0;
+}
+.firstbox .bigpic {
+    position: absolute;
+    /*top: 33.5%;*/
+    bottom: 0px;
+    left: 50%;
+    margin-left: -800px;
+    width: 1350px;
+    height: 466px;
+    background: url(../img/first/bgi.png);
+    z-index: 10;
+    opacity: 0;
+
+}
+.firstbox .spot {
+    position: absolute;
+    bottom: 0;
+    margin-left: 5%;
+    width: 1591px;
+    height: 533px;
+    background: url(../img/first/bgi2.png);
+    z-index: 15;
+}
+.firstbox .phone{
+    position: absolute;
+    left: -200px;
+    bottom: 0;
+    width: 1430px;
+    height: 170px;
+    background: url(../img/first/iphonebgi.png) no-repeat;
+    z-index: 5;
+    opacity: 0;
+}
+.firstbox .arrow {
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 0;
+    width: 90px;
+    height: 60px;
+    background: url(../img/first/jlt.png) -718px -502px no-repeat;
+    z-index: 20;
+    cursor: pointer;
+}
+/*第一个盒子end*/
+
+/*第二个盒子start*/
+.secondtbox {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+    background: url(../img/first/bigbgi.jpg) center top no-repeat;
+}
+.secondtbox .tit_two {
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    z-index: 10;
+    opacity:0;
+}
+.secondtbox .bigpic2_two{
+    position: absolute;
+    left: 1500px;
+    bottom: 0;
+    width: 2246px;
+    height: 670px;
+    background: url(../img/second/bigbgi2.png) no-repeat 0px -250px;
+}
+.secondtbox .arrow2_two {
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 0;
+    width: 90px;
+    height: 60px;
+    background: url(../img/first/jlt.png) -718px -502px no-repeat;
+    z-index: 20;
+    cursor: pointer;
+}
+/*第二个盒子end*/
+
+/*悬浮的物体start*/
+.ltnav {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    z-index: 100;
+}
+.ltnav li{
+    display: block;
+    width: 31px;
+    height: 31px;
+    margin: 5px 0px;
+    background: url(../img/first/jlt.png) -1068px -203px no-repeat;
+}
+.ltnav .pub_nav {
+    background: url(../img/first/jlt.png) -1068px -168px no-repeat;
+}
+/*悬浮的物体end*/
+
+/*第三个盒子*/
+#threebox {
+    background: url(../images/bigbgi.jpg) no-repeat;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+}
+#threebox .tbox1{
+    height: 468px;
+    position: absolute;
+    top: 700px;
+    left: 155px;
+}
+#threebox .tbox1 img{
+    width: 950px;
+    height: 550px;
+}
+#threebox .tbox2{
+    position: absolute;
+    top: 280px;
+    right: 115px;
+    display: none;
+}
+#threebox .tbox2 img{
+    width: 434px;
+    height: 206px;
+
+}
+#threebox .tbox3 {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+}
+
+
+/*第四张*/
+#fourbox {
+    background: url(../images/bigbgi.jpg) no-repeat;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    /*background-color: red;*/
+    overflow: hidden;
+}
+#fourbox .fbox1 {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    opacity: 0;
+}
+.fbox1 img{
+    width: 400px;
+    height: 400px;
+}
+#fourbox .fbox2{
+    position: absolute;
+    top: 115px;
+    left: -654px;
+}
+.fbox2 img{
+    width: 800px;
+}
+#fourbox .fbox3{
+    width: 730px;
+    height: 230px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 100px;
+    display: none;
+}
+.fbox3 img{
+    width: 500px;
+    height: 180px;
+}
+#fourbox .fbox4{
+    position: absolute;
+    left: 50%;
+    margin-left: -37px;
+    bottom: 60px;
+}
+#fourbox .fbox5{
+    position: absolute;
+    top: 0;
+    right: -914px;
+    z-index: 5;
+}
+.fbox5 img{
+    height: 670px;
+}

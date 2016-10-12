@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>《Raven：掠夺者》游戏特色介绍_《Raven：掠夺者》官网</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/myself.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/special.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        window.onload = function () {
+            //第一个盒子
+            $(function () {
+                $(".tit").animate({
+                    "opacity": 1,
+                },2000);
+                $(".bigpic").animate({
+                    "opacity": 1,
+                    "marginLeft": "-610px",
+                },1000);
+                $(".phone").animate({
+                    "opacity": 1,
+                    "left": "0px",
+                },1000);
+            $(window).scroll(function () {
+                var scrollT = $(this).scrollTop();
+                if(scrollT>600){
+                    $(".tit").css({
+                        "opacity": 0
+                    });
+                    $(".bigpic").css({
+                        "opacity": 0,
+                        "marginLeft": "-800px",
+                    });
+                    $(".phone").css({
+                        "opacity": 0,
+                        "left": "-200px",
+                    });
+                    $(".tit,.bigpic,.phone").stop(true,false);
+                }else if(scrollT<400){
+                    $(".tit").animate({
+                        "opacity": 1,
+                    },2000);
+                    $(".bigpic").animate({
+                        "opacity": 1,
+                        "marginLeft": "-610px",
+                    },1000);
+                    $(".phone").animate({
+                        "opacity": 1,
+                        "left": "0px",
+                    },1000);
+                }
+            });
+                //小箭头
+                setInterval(function () {
+                    $(".pub_arr").animate({
+                        "bottom": "20px",
+                    },1000).animate({
+                        "bottom": "0px",
+                    },1000);
+                },15);
+            });
+
+
+                $(window).scroll(function () {
+                    //第二个盒子
+                    var scrollT = $(this).scrollTop();
+
+                    if(scrollT>200  ){
+                        $(".tit_two").animate({
+                            "opacity": 1,
+                        },2000);
+                        $(".bigpic2_two").animate({
+                            "left":"-600px"
+                        },1000);
+
+                    }else if(scrollT<10){
+                        $(".tit_two").css("opacity",0);
+                        $(".bigpic2_two").css("left","1500px");
+                        $(".tit_two,.bigpic2_two").stop(true,false);
+
+                    }
+                });
+            //第三个盒子
+            $(window).scroll(function() {
+                var scrT = $(this).scrollTop();
+                if (scrT > 1100) {
+                    $("#threebox .tbox1").animate({
+                        "top": "112px"
+                    }, 800)
+                    $("#threebox .tbox2").show(800);
+                } else if (scrT < 800 || scrT > 1400) {
+                    $("#threebox .tbox1").css("top", "700px");
+                    $("#threebox .tbox2").hide();
+                    $("#threebox .tbox1,#threebox .tbox2").stop(true, false);
+                }
+            })
+            //第四个盒子
+            $(window).scroll(function(){
+                var scrT=$(this).scrollTop();
+                if(scrT>1700){
+                    $("#fourbox>.fbox2").animate({
+                        "left":"-100px"
+                    },700);
+                    $("#fourbox>.fbox5").animate({
+                        "right":"-100px"
+                    },700)
+                    $("#fourbox .fbox1").animate({
+                        "opacity":1
+                    },800);
+                    $("#fourbox .fbox3").show(800);
+                    $("#fourbox .fbox4").animate({
+                        "opacity":1
+                    },1000)
+                }else if(scrT<1200){
+                    $("#fourbox>.fbox2").css("left","-654px");
+                    $("#fourbox>.fbox5").css("right","-914px");
+                    $("#fourbox .fbox1").css("opacity",0);
+                    $("#fourbox .fbox3").hide();
+                    $("#fourbox>.fbox2,#fourbox>.fbox5,#fourbox .fbox1,#fourbox .fbox3,#fourbox .fbox4").stop(true,false);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<!--顶部导航start-->
+<div id="topBar" class="clearfix">
+    <div class="w">
+        <div id="bigBanner"></div>
+        <div class="topBarLogo fl">
+            <a href="#">网易游戏</a>
+        </div>
+        <div class="topBanner fl"></div>
+        <ul class = "fr">
+            <li><a href="#">注册账号</a></li>
+            <li><a href="#">安卓充值</a></li>
+            <li class="dir-li"><a href="#">网易游戏全目录</a><em></em></li>
+            <li><a href="#">网易考拉海购</a></li>
+        </ul>
+    </div>
+</div>
+<!--顶部导航end-->
+
+<!--第一个盒子-->
+<div class="firstbox" id="firstbox">
+
+    <div class="tit">
+        <img src="img/first/title.png" alt="" width="576px"/>
+    </div>
+    <div class="bigpic"></div>
+    <div class="spot"></div>
+    <div class="phone"></div>
+    <div class="pub_arr arrow"></div>
+</div>
+<!--第二个盒子-->
+<div class="secondtbox">
+    <div class="tit_two">
+        <img src="img/second/title2.png" alt="" width="406px"/>
+    </div>
+    <div class="bigpic2_two"></div>
+    <div class="pub_arr arrow2_two"></div>
+</div>
+
+<!--第三个盒子-->
+
+<div id="threebox" class="clearfix">
+    <div class="tbox1"><img src="images/pic1.png" alt=""/></div>
+    <div class="tbox2"><img src="images/txt1.png" alt=""/></div>
+    <div class="tbox3 pub_arr"><img src="images/jlt.png" alt=""/></div>
+</div>
+
+<!--第四个盒子-->
+<div id="fourbox" class="clearfix">
+    <div class="fbox1"><img src="images/pic2.png" alt=""/></div>
+    <div class="fbox2"><img src="images/pic3.png" alt=""/></div>
+    <div class="fbox3"><img src="images/txt2.png" alt=""/></div>
+    <div class="fbox4 pub_arr"><img src="images/jlt.png" alt=""/></div>
+    <div class="fbox5"><img src="images/pic4.png" alt=""/></div>
+</div>
+
+<div class="vid-words">
+    <p>客服电话 :020-89166182-3</p>
+    <p>网易游戏对外联系专线 :0571-26206163（呼出专用，不作接听）</p>
+</div>
+
+<!--底部-->
+<div class="footer">
+    <div class="bx">
+        <div class="footer-pic clearfix">
+            <ul>
+                <li><a href="#"><img src="images/netease.3.png" alt="网易logo"/></a></li>
+                <li><a href="#"><img src="images/nie.3.png" alt="网易logo"/></a></li>
+                <li><a href="#"><img src="images/wen.png" alt="图片"/></a></li>
+                <li><a href="#"><img src="images/wen2.png" alt="图片"/></a></li>
+                <li><a href="#"><img src="images/zuihou.png" alt="图片"/></a></li>
+            </ul>
+            <div class="footer-right">
+                <a href="#"> 点击查看家长监护工程&nbsp;
+                    <i>
+                        <s>
+                            ♢
+                        </s>
+                    </i>
+                </a>
+            </div>
+        </div>
+        <ul class="footer-ser clearfix">
+            <li><a href="#">公司简介</a></li>
+            <li>－</li>
+            <li><a href="#">客户服务</a></li>
+            <li>－</li>
+            <li><a href="#">相关法律</a></li>
+            <li>－</li>
+            <li><a href="#">网易游戏</a></li>
+            <li>－</li>
+            <li><a href="#">联系我们</a></li>
+            <li>－</li>
+            <li><a href="#">商务合作</a></li>
+            <li>－</li>
+            <li><a href="#">加入我们</a></li>
+            <li>－</li>
+            <li><a href="#">用户协议</a></li>
+        </ul>
+        <div class="footer-copy">网易公司版权所有 &copy;1997-2016</div>
+
+        <div class="footer-note">
+            <p> 本游戏适合16岁以上的玩家进入。</p>
+            <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+        </div>
+        <div class="footer-bottom">
+            <p class="bota fl">《网络游戏管理暂行办法》</p>
+            <p class="botb fl">文网游备字〔2016〕Ｍ-SLG 1015 号《网络文化经营许可证》浙网文[2016]0155-055号</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
